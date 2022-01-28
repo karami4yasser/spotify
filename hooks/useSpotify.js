@@ -14,6 +14,7 @@ function useSpotify() {
   useEffect(() => {
     if (session) {
       if (session.error === "RefreshAccessTokenError") {
+        
         signIn();
       }
 
